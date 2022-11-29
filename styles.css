@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+/* Start Variables */
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons-: hsl(0, 0%, 95%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+    background-color: var(--background-headings-buttons-);
+}
+a {
+    text-decoration: none;
+}
+/* End Global Rules */
+/* Start Main */
+main {
+    max-width: 56.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(15.625rem, 1fr));
+    margin: 1.875rem 1.875rem 0.625rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+main section {
+    padding: 2.5rem;
+}
+main section:first-of-type {
+    background-color: var(--Bright-orange);
+}
+main section:nth-of-type(2) {
+    background-color: var(--Dark-cyan);
+}
+main section:last-of-type {
+    background-color: var(--Very-dark-cyan);
+}
+main section img {
+    display: block;
+}
+main section h2 {
+    margin-top: 1.875rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.3em;
+    font-weight: normal;
+    color: var(--background-headings-buttons-);
+    text-transform: uppercase;
+}
+main section p {
+    color: var(--paragraphs);
+    margin-block: 1.875rem 5rem;
+    line-height: 1.6;
+}
+main section a {
+    display: block;
+    width: fit-content;
+    padding: 0.625rem 1.875rem;
+    border: 0.125rem solid white;
+    border-radius: 1.875rem;
+}
+main section:first-of-type a {
+    color: var(--Bright-orange);
+    background-color: white;
+}
+main section:first-of-type a:active {
+    color: white;
+    background-color: var(--Bright-orange);
+}
+main section:nth-of-type(2) a {
+    color: var(--Dark-cyan);
+    background-color: white;
+}
+main section:nth-of-type(2) a:active {
+    color: white;
+    background-color: var(--Dark-cyan);
+}
+main section:last-of-type a {
+    color: var(--Very-dark-cyan);
+    background-color: white;
+}
+main section:last-of-type a:active {
+    color: white;
+    background-color: var(--Very-dark-cyan);
+}
+@media (max-width: 47.9375rem) {
+    main {
+        grid-template-columns: 21.875rem;
+        margin: 1.25rem;
+    }
+    main section h2 {
+        margin-top: 1.25rem;
+    }
+    main section p {
+        margin-block: 1.25rem;
+    }
+}
+@media (max-width: 18.75rem) {
+    main {
+        grid-template-columns: 15.625rem;
+        margin: 1.25rem;
+    }
+}
+/* End Main */
