@@ -21,7 +21,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 ## Links
 
 - Solution URL: [Github](https://github.com/oussamaelomri/preview-cars-card)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Live Site URL: [Live](https://oussamaelomri.github.io/preview-cars-card/)
 
 ## My process
 
